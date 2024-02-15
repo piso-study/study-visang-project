@@ -1,2 +1,3 @@
-# study-visang-project
-This is for visang study project
+# Github 연습과 토이 프로젝트 준비
+
+1. 메인 레포지토리 fork 하기.
