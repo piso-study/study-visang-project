@@ -23,4 +23,21 @@ git switch [생성한 브랜치명]
 
 4. 해당 브랜치에서 개발을 진행
 
-5.
+5. fork한 본인의 저장소에 push한다.
+
+```bash
+git add [...저장한 파일들]
+git commit [적절한 커밋들]
+git push [fork한 본인의 저장소 이름] [생성한 브랜치명]
+```
+
+6. pull request를 github 페이지에서 날린다.
+
+7. pull request가 Close 즉 컨펌이 되면 로컬의 브랜치와 원격 저장소의 브랜치를 삭제한다.
+
+```bash
+git branch -d [개발하고자 하는 기능에 부합한 브랜치명]
+git push --delete [fork한 본인의 저장소 이름] [생성한 브랜치명]
+```
+
+8. 1~7를 반복한다.
