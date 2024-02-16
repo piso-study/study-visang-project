@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	color: darkslategray;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+	background-color: rgb(238, 240, 241);
+}
+li {
+	list-style-type: none;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+}
+button {
+	font-weight: 700;
+	font-size: large;
+
+	padding: 4px;
+	border: 2px solid darkslategray;
+	border-radius: 8px;
+	margin: 2px;
+}
+
+#TodoTitle {
+	padding: 2rem;
+
+	font-weight: 900;
+	font-size: xxx-large;
+
+	color: orangered;
+}
+
+#TodoInput {
+	padding: 4px;
+	/* margin-right: 8px; */
+}
+
+input[type='text']:focus {
+	outline: none;
+}
+input[type='text'] {
+	font-weight: 700;
+	font-size: large;
+	text-indent: 4px;
+
+	border-bottom: 4px solid darkslategray;
+}
+input[type='text']:disabled {
+	font-weight: 700;
+	font-size: large;
+	text-indent: 4px;
+
+	border-bottom: 2px solid darkslategray;
+}
+input[type='text'].checked {
+	text-decoration: line-through;
+}
+
+#TodoInput > button[type='submit']:hover {
+	filter: invert(1);
+}
+#TodoInput > button[type='submit'] {
+	font-size: x-large;
+
+	border: 4px solid darkslategray;
+	border-radius: 8px;
+}
+
+#TodoList {
+	min-width: 300px;
+	max-width: 80%;
+}
+#TodoList > li {
+	padding: 8px 4px;
+
+	font-size: medium;
+	font-weight: 600;
+
+	list-style-type: lower-roman;
+}
