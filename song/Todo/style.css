@@ -29,7 +29,7 @@ button {
 	margin: 2px;
 }
 
-#TodoTitle {
+#todoTitle {
 	padding: 2rem;
 
 	font-weight: 900;
@@ -38,7 +38,7 @@ button {
 	color: orangered;
 }
 
-#TodoInput {
+#todoInput {
 	padding: 4px;
 	/* margin-right: 8px; */
 }
@@ -64,21 +64,21 @@ input[type='text'].checked {
 	text-decoration: line-through;
 }
 
-#TodoInput > button[type='submit']:hover {
+#todoInput > button[type='submit']:hover {
 	filter: invert(1);
 }
-#TodoInput > button[type='submit'] {
+#todoInput > button[type='submit'] {
 	font-size: x-large;
 
 	border: 4px solid darkslategray;
 	border-radius: 8px;
 }
 
-#TodoList {
+#todoList {
 	min-width: 300px;
 	max-width: 80%;
 }
-#TodoList > li {
+#todoList > li {
 	padding: 8px 4px;
 
 	font-size: medium;
