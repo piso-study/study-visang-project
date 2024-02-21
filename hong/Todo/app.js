@@ -27,13 +27,11 @@ const store = {
 			todo: todo.value,
 			completed: todo.classList.contains('checked'),
 		}));
-
 		localStorage.setItem('myTodoList', JSON.stringify(todos));
 	},
 
     loadTodoList: () => {
         const storedTodos = JSON.parse(localStorage.getItem('myTodoList'));
-
         storedTodos && storedTodos.forEach(({ todo, completed }) => todos.addTodo(todo, completed));
     },
 };
@@ -48,8 +46,7 @@ $root.innerHTML = `
 `;
 
 $root.addEventListener('submit', (e) => {
-    e.preventDefault();
-	
+    e.preventDefault();	
     const inputValue = document.querySelector(`input[name="todo"]`).value.trim();
     if (inputValue === "") return;
 
