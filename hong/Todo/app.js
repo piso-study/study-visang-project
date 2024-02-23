@@ -1,21 +1,20 @@
 const $root = document.getElementById('root');
 
-const todos = {
-    getNewTodoElements: (elementAttrs) =>
-		elementAttrs.map((attr) => Object.assign(document.createElement(attr.tag), attr)),
+const todoElements = {
+	getNewTodoElements: (elementAttrs) => elementAttrs.map((attr) => Object.assign(document.createElement(attr.tag), attr)),
 
 	addTodo: (todoStr, completed = false) => {
-        const todoList = document.querySelector('#todoList');
-		const todoLi = document.createElement('li');
+		const todoList = document.querySelector('#todoList');
+		const newTodo = document.createElement('li');
 
-		todos.getNewTodoElements([
-			{ tag: 'input', type: 'text', disabled: true, value: todoStr, className: completed ? 'checked' : '' },
+		todoElements.getNewTodoElements([
+			{ tag: 'input', type: 'text' , disabled: true, value: todoStr, className: completed ? 'checked': ''},
 			{ tag: 'i', className: 'custom-checkbox bx bx-checkbox bx-sm' },
 			{ tag: 'i', className: 'update-todo bx bx-pencil bx-sm' },
 			{ tag: 'i', className: 'delete-todo bx bx-trash bx-sm' },
-		]).forEach((element) => todoLi.appendChild(element));
+		]).forEach((element) => newTodo.appendChild(element));
 
-		todoList.appendChild(todoLi);
+		todoList.appendChild(newTodo);
 	},
 
 	toggles: (ele, arr) => arr.forEach((i) => ele.classList.toggle(i)),
@@ -32,7 +31,7 @@ const store = {
 
     loadTodoList: () => {
         const storedTodos = JSON.parse(localStorage.getItem('myTodoList'));
-        storedTodos && storedTodos.forEach(({ todo, completed }) => todos.addTodo(todo, completed));
+        storedTodos && storedTodos.forEach(({ todo, completed }) => todoElements.addTodo(todo, completed));
     },
 };
 
@@ -46,23 +45,20 @@ $root.innerHTML = `
 `;
 
 $root.addEventListener('submit', (e) => {
-    e.preventDefault();	
-    const inputValue = document.querySelector(`input[name="todo"]`).value.trim();
-    if (inputValue === "") return;
-
-    todos.addTodo(inputValue);
-    e.target.todo.value = "";
-
-    store.saveTodoList();
+	e.preventDefault();
+	const inputValue = e.target.elements.todo.value.trim();
+	inputValue === "" ? null : todoElements.addTodo(inputValue);
+    e.target.elements.todo.value = "";
+	store.saveTodoList();
 });
 
-$root.querySelector('#todoList').addEventListener('click', (e) => {
+$root.addEventListener('click', (e) => {
 	const targetClassList = e.target.classList;
 
 	if (targetClassList.contains('update-todo')) {
 		const updatingTodo = e.target.previousElementSibling.previousElementSibling;
 		updatingTodo.disabled = !updatingTodo.disabled;
-		todos.toggles(e.target, ['bx-pencil', 'bx-check']);
+		todoElements.toggles(e.target, ['bx-pencil', 'bx-check']);
 	};
 
 	if (targetClassList.contains('delete-todo')) {
@@ -71,11 +67,11 @@ $root.querySelector('#todoList').addEventListener('click', (e) => {
 
 	if (targetClassList.contains('custom-checkbox')) {
 		const checkBox = e.target;
-		todos.toggles(checkBox, ['bx-checkbox', 'bx-checkbox-checked']);
-		todos.toggles(checkBox.previousElementSibling, ['checked']);
-	} ;
+		todoElements.toggles(checkBox, ['bx-checkbox', 'bx-checkbox-checked']);
+		todoElements.toggles(checkBox.previousElementSibling, ['checked']);
+	};
 
-    store.saveTodoList();
+	store.saveTodoList();
 });
 
 window.addEventListener('DOMContentLoaded', store.loadTodoList);
