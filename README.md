@@ -4,7 +4,7 @@
 
 | 송승학 :blush:                                                | 홍석진 :laughing:                                        |
 | :------------------------------------------------------------ | :------------------------------------------------------- |
-| [스터디 기록 깃헙](https://github.com/PisoDev77/study-visang) | ![스터디 기록 깃헙](https://github.com/hongoov/study)    |
+| [스터디 기록 깃헙](https://github.com/PisoDev77/study-visang) | [스터디 기록 깃헙](https://github.com/hongoov/study)    |
 | ![아바타](https://avatars.githubusercontent.com/Pisodev77)    | ![아바타](https://avatars.githubusercontent.com/hongoov) |
 
 ## 깃 전략
