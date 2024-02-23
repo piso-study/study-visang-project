@@ -1,5 +1,12 @@
 # Github 연습과 토이 프로젝트 준비
 
+## 인원
+
+| 송승학 :blush:                                                | 홍석진 :laughing:                                        |
+| :------------------------------------------------------------ | :------------------------------------------------------- |
+| [스터디 기록 깃헙](https://github.com/PisoDev77/study-visang) | ![스터디 기록 깃헙](https://github.com/hongoov/study)    |
+| ![아바타](https://avatars.githubusercontent.com/Pisodev77)    | ![아바타](https://avatars.githubusercontent.com/hongoov) |
+
 ## 깃 전략
 
 1. 메인 원격 저장소의 최신 버전을 다운로드합니다.
