@@ -1,0 +1,119 @@
+:root {
+	--primary-color: #00b0f0;
+	--secondary-color: #13678a;
+	--text-color: white;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+}
+
+/* Button
+	- 기본 버튼
+*/
+/* 기본 버튼 */
+button {
+	/* offset */
+	border: none;
+	background: none;
+	padding: 0.5rem 1rem;
+
+	/* colors */
+	background-color: var(--primary-color);
+	color: var(--text-color);
+
+	/* border */
+	border-radius: 2rem;
+
+	/* fonts */
+	font-weight: 700;
+}
+
+/* Disabled 버튼 */
+button:disabled {
+	background-color: gray;
+	pointer-events: none;
+}
+button:disabled:hover {
+	cursor: not-allowed;
+}
+
+/* Hover 버튼 */
+button:hover {
+	background-color: var(--secondary-color);
+	cursor: pointer;
+}
+
+/* Popup
+	- 기본 popup
+	- 성공 popup
+	- 실패 popup
+*/
+/* 기본 popup */
+div.popup {
+	background-color: var(--secondary-color);
+	color: var(--text-color);
+	padding: 8px;
+}
+
+/* 성공 popup */
+div.popup.success {
+	background-color: greenyellow;
+	color: black;
+}
+
+/* 실패 popup */
+div.popup.fail {
+	background-color: red;
+}
+
+/* Textarea
+	- textarea label
+	- textarea
+	- textarea result
+*/
+
+/* textarea label */
+label.textareaLabel {
+	color: var(--primary-color);
+	display: block;
+}
+
+/* textarea */
+textarea {
+	resize: none;
+	padding: 0.5rem 1rem;
+
+	border: 2px solid var(--secondary-color);
+	border-radius: 1rem;
+}
+
+/* textarea result */
+div.textareaResult {
+	padding: 0.5rem 1rem;
+	border: 2px solid var(--primary-color);
+	border-radius: 1rem;
+}
+
+/* h1 */
+h1.title {
+	color: var(--primary-color);
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+/* h2 */
+h2.title {
+	color: var(--secondary-color);
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+/* h3 */
+h3.title {
+	color: var(--secondary-color);
+	font-size: 1.5rem;
+	font-weight: 700;
+}
