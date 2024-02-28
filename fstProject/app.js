@@ -1,3 +1,15 @@
-import { myVariable } from './src/feat.js';
+import DOMStringJimoon from './src/feat.js';
 
-document.getElementById('root').innerHTML = myVariable;
+const pages = {
+	tmp: DOMStringJimoon,
+};
+
+const $root = document.getElementById('root');
+
+document.querySelector('header').addEventListener('click', (event) => {
+	if (event.target.classList.contains('pageLink')) {
+		const { link } = event.target.dataset;
+		if (!link) return;
+		$root.innerHTML = pages[link];
+	}
+});
