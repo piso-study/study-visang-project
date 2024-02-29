@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../style.css" />
+		<title>ContentsToDomstring</title>
+		<style>
+			section.contentsToDomstringPage {
+				display: flex;
+				flex-wrap: wrap;
+				padding: 16px;
+				gap: 1rem;
+			}
+			section.contentsToDomstringPage > h1 {
+				flex: 1 1 100%;
+			}
+			section.contentsToDomstringPage > div {
+				flex: 1 1 33%;
+			}
+			section.contentsToDomstringPage > div > textarea {
+				width: 100%;
+			}
+			section.contentsToDomstringPage > div.textareaResult {
+				margin-top: 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="contentsToDomstringPage">
+			<h1 class="title">영어문제 DOMString 변환하기</h1>
+			<div>
+				<label for="contentsToDOMString" class="textareaLabel">영어 문제 텍스트(ex: 한글, PPT)</label>
+				<textarea
+					id="contentsToDOMString"
+					placeholder="변환하고자 하는 문제들을 Context에 맞추어 작성하세요."
+				></textarea>
+			</div>
+			<button>변환 <br />⇌</button>
+			<div class="textareaResult">변환하고자 하는 문제들을 Context에 맞추어 작성한 결과가 이곳에 표시됩니다.</div>
+		</section>
+	</body>
+</html>
