@@ -2,15 +2,25 @@
 
 -   TODO: 앱에 대한 설명을 적어보자.
 
-## Stacks
+<h2 style="display: flex; width: 100%; height: 40px; align-items: center; text-indent: 10px; background-color: #00b0f0; font-size: 1.5rem; font-weight: 700; color: white;">🛠️ Stacks</h2>
 
--   Vanillajs
--   HTML
--   CSS
--   Teams
--   Github
+![React](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=FFFFFF)
+![React](https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=FFFFFF)
+![React](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=FFFFFF)
+![React](https://img.shields.io/badge/microsoftteams-6264A7?style=for-the-badge&logo=microsoftteams&logoColor=FFFFFF)
+![React](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=FFFFFF)
 
-## Timeline
+-   We used the following tech stacks.
+    
+    - HTML5
+    - CSS3
+    - Vanila JavaScript
+    - Microsoft Teams
+    - Github
+
+<br>
+
+<h2 style="display: flex; width: 100%; height: 40px; align-items: center; text-indent: 10px; background-color: #00b0f0; font-size: 1.5rem; font-weight: 700; color: white;">📆 Timeline</h2>
 
 -   First week
 
