@@ -1,6 +1,8 @@
-# Visang helper Web application (TODO: 적절한 웹앱의 이름을 정하자)
+# A.M.F
 
--   TODO: 앱에 대한 설명을 적어보자.
+> Automatic Maker From V CBS
+
+-   A.M.F is a web application make DOMString from English Contents. The contents are CBS in V contents.
 
 <h2 style="display: flex; width: 100%; height: 40px; align-items: center; text-indent: 10px; background-color: #00b0f0; font-size: 1.5rem; font-weight: 700; color: white;">🛠️ Stacks</h2>
 
@@ -11,12 +13,12 @@
 ![React](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=FFFFFF)
 
 -   We used the following tech stacks.
-    
-    - HTML5
-    - CSS3
-    - Vanila JavaScript
-    - Microsoft Teams
-    - Github
+
+    -   HTML5
+    -   CSS3
+    -   Vanila JavaScript
+    -   Microsoft Teams
+    -   Github
 
 <br>
 
