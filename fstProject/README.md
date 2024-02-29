@@ -4,12 +4,10 @@
 
 -   A.M.F is a web application make DOMString from English Contents. The contents are CBS in V contents.
 
-<h2>
 <svg width="100%" height="40" xmlns="http://www.w3.org/2000/svg">
   <rect width="100%" height="100%" style="fill:#00b0f0;" />
   <text x="10" y="50%" alignment-baseline="middle" fill="white" font-size="1.5rem" font-weight="700">🛠️ Stacks</text>
 </svg>
-</h2>
 
 ![React](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=FFFFFF)
 ![React](https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=FFFFFF)
