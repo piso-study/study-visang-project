@@ -2,7 +2,7 @@
 
 > Automatic Maker From V CBS
 
-- **A.M.F** is a web application make DOMString from English Contents. The contents are CBS in V contents.
+-   **A.M.F** is a web application make DOMString from English Contents. The contents are CBS in V contents.
 
 ## 🛠️ Stacks
 
