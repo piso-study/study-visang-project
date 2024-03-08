@@ -1,26 +1,18 @@
-# Visang helper Web application (TODO: 적절한 웹앱의 이름을 정하자)
+# A.M.F
 
--   TODO: 앱에 대한 설명을 적어보자.
+> Automatic Maker From V CBS
 
-<h2 style="display: flex; width: 100%; height: 40px; align-items: center; text-indent: 10px; background-color: #00b0f0; font-size: 1.5rem; font-weight: 700; color: white;">🛠️ Stacks</h2>
+- **A.M.F** is a web application make DOMString from English Contents. The contents are CBS in V contents.
 
-![React](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=FFFFFF)
-![React](https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=FFFFFF)
-![React](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=FFFFFF)
-![React](https://img.shields.io/badge/microsoftteams-6264A7?style=for-the-badge&logo=microsoftteams&logoColor=FFFFFF)
-![React](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=FFFFFF)
+## 🛠️ Stacks
 
--   We used the following tech stacks.
-    
-    - HTML5
-    - CSS3
-    - Vanila JavaScript
-    - Microsoft Teams
-    - Github
+![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=FFFFFF)
+![CSS3](https://img.shields.io/badge/css3-1572B6?style=for-the-badge&logo=css3&logoColor=FFFFFF)
+![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=FFFFFF)
+![Teams](https://img.shields.io/badge/microsoftteams-6264A7?style=for-the-badge&logo=microsoftteams&logoColor=FFFFFF)
+![Github](https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=FFFFFF)
 
-<br>
-
-<h2 style="display: flex; width: 100%; height: 40px; align-items: center; text-indent: 10px; background-color: #00b0f0; font-size: 1.5rem; font-weight: 700; color: white;">📆 Timeline</h2>
+## 📆 Timeline
 
 -   First week
 
