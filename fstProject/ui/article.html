@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Article</title>
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../layout.css">
+	<script src="../src/article.js"></script>
+</head>
+<body>
+	<header>
+		<a href="./index.html"><img class="logo" src="../assets/logo.png" alt="amf logo"></a>
+		<nav>
+			<a class="pageLink" data-link="article">ariticle 기능</a>
+			<a class="pageLink" data-link="tmp">지문 기능</a>
+		</nav>
+	</header>
+	<main id="root">
+		<h1 class="title">article 속성 추출</h1>
+
+		<div class="contentsWrapper">
+			<div class="innerWrapper">
+				<label class="textareaLabel">-> article 태그의 속성 값들을 추출하는 기능을 제공합니다.</label>
+				<textarea placeholder="추출할 article 태그를 입력하세요."></textarea>
+			</div>
+
+			<button id="extractBtn">추출</button>
+
+        <div class=" innerWrapper">
+				<label>-> 추출된 속성 값들이 이곳에 표시됩니다.</label>
+				<div class="textareaResult"></div>
+		</div>
+		</div>
+	</main>
+</body>
+</html>
