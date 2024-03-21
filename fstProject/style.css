@@ -1,8 +1,26 @@
-:root {
-	--primary-color: #00b0f0;
-	--secondary-color: #13678a;
-	--text-color: white;
+/* font
+	- default : 'Noto Sans Korean'
+	- h1 : 'GeekbleMalang2'
+	- textareaResult : 'intel One Mono font'
+-------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@font-face {
+	font-family: 'GeekbleMalang2WOFF2';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/GeekbleMalang2WOFF2.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
 }
+
+@font-face {
+    font-family: 'intelone-mono-font-family-regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 스타일 초기화
+-------------------------------------------------- */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -10,31 +28,69 @@
 	font-size: 1rem;
 }
 
-/* Button
-	- 기본 버튼
-*/
-/* 기본 버튼 */
-button {
-	/* offset */
-	border: none;
-	background: none;
-	padding: 0.5rem 1rem;
-
-	/* colors */
-	background-color: var(--primary-color);
-	color: var(--text-color);
-
-	/* border */
-	border-radius: 2rem;
-
-	/* fonts */
-	font-weight: 700;
-
-	width: 100px;
-	height: 100px;
+body {
+	font-family: "Noto Sans KR", sans-serif;
 }
 
-/* Disabled 버튼 */
+::selection {
+	background: var(--primary-color);
+	color: #fff;
+}
+
+/* color
+-------------------------------------------------- */
+:root {
+	--primary-color: #00b0f0;
+	--secondary-color: #13678a;
+	--text-color: white;
+}
+
+/* title
+	- h1
+	- h2
+	- h3
+-------------------------------------------------- */
+h1.title {
+	font-family: 'GeekbleMalang2WOFF2';
+	font-size: 3rem;
+	font-weight: normal;
+	color: var(--primary-color);
+}
+
+h2.title {
+	font-size: 2rem;
+	font-weight: 800;
+	color: var(--secondary-color);
+}
+
+h3.title {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--secondary-color);
+}
+
+/* button
+	- default button
+	- hover button
+	- disabked button
+-------------------------------------------------- */
+button {
+	border: none;
+	background: none;
+	width: 100px;
+	height: 100px;
+	background-color: var(--primary-color);
+	border-radius: 2rem;
+	padding: 0.5rem 1rem;
+	font-weight: 700;
+	color: var(--text-color);
+	transition: all 0.1s ease-in;
+	cursor: pointer;
+}
+button:hover {
+	background-color: var(--secondary-color);
+}
+
 button:disabled {
 	background-color: gray;
 	pointer-events: none;
@@ -43,99 +99,67 @@ button:disabled:hover {
 	cursor: not-allowed;
 }
 
-/* Hover 버튼 */
-button:hover {
-	background-color: var(--secondary-color);
-	cursor: pointer;
-}
-
-/* Popup
-	- 기본 popup
-	- 성공 popup
-	- 실패 popup
-*/
-/* 기본 popup */
+/* div.popup
+	- default
+	- success
+	- failure
+-------------------------------------------------- */
 div.popup {
 	background-color: var(--secondary-color);
-	color: var(--text-color);
 	padding: 8px;
+	color: var(--text-color);
 }
 
-/* 성공 popup */
 div.popup.success {
 	background-color: greenyellow;
 	color: black;
 }
 
-/* 실패 popup */
-div.popup.fail {
+div.popup.failure {
 	background-color: red;
 }
 
-/* Textarea
-	- textarea label
+/* textarea
+	- label
 	- textarea
-	- textarea result
-*/
-
-/* textarea label */
-label.textareaLabel {
+-------------------------------------------------- */
+label {
 	color: var(--primary-color);
-	display: block;
 }
 
-/* textarea */
 textarea {
 	resize: none;
-	padding: 0.5rem 1rem;
-
 	border: 2px solid var(--secondary-color);
 	border-radius: 1rem;
-
-	width: 42%;
-	height: 400px;
-}
-
-/* textarea result */
-div.textareaResult {
 	padding: 0.5rem 1rem;
-	border: 2px solid var(--primary-color);
+}
+
+textarea::-webkit-scrollbar {
+	width: 1rem;
+}
+textarea::-webkit-scrollbar-thumb {
+	height: 5rem;
+	background: var(--primary-color);
+	background-clip: padding-box;
+	border: 2px solid transparent;
 	border-radius: 1rem;
-
-	width: 42%;
-	height: 400px;
+	padding: 2px;
+}
+textarea::-webkit-scrollbar-track {
+	background: none;
+}
+textarea::-webkit-scrollbar-button {
+	height: 8px;
+	background: none;
+	cursor: default;
 }
 
-/* h1 */
-h1.title {
-	color: var(--primary-color);
-	font-size: 3rem;
-	font-weight: 900;
-}
-
-/* h2 */
-h2.title {
-	color: var(--secondary-color);
-	font-size: 2rem;
-	font-weight: 800;
-}
-
-/* h3 */
-h3.title {
-	color: var(--secondary-color);
-	font-size: 1.5rem;
-	font-weight: 700;
-}
-
-/* 임시로 작성된 wrapper */
-.wrapper {
-	position: absolute;
-	top: 200px;
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	width: 90%;
+/* div
+	- textareaResult
+-------------------------------------------------- */
+div.textareaResult {
+	border: 2px solid var(--secondary-color);
+	border-radius: 1rem;
+	padding: 0.5rem 1rem;
+	font-family: 'intelone-mono-font-family-regular';
 }
