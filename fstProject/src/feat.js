@@ -1,12 +1,22 @@
 export default `
-<h1 class="title">지문 쏼라쏼라 기능</h1>
-<label class="textareaLabel">한글로부터 텍스트 복붙하는 TA</label>
-<textarea id="textareaId" placeholder="여따 적어라"></textarea>
-<button id="tmpBtn">my btn</button>
-<textarea id="res"></textarea>
+<h1 class="title">지문으로 변환</h1>
+
+    <div class="contentsWrapper">
+        <div class="innerWrapper">
+            <label class="textareaLabel">-> 규칙에 따라 작성된 텍스트를 html 문법 텍스트로 변환해줍니다.</label>
+            <textarea placeholder="규칙에 따라 작성된 텍스트를 작성하세요."></textarea>
+        </div>
+
+        <button id="convertBtn"">변환</button>
+
+        <div class="innerWrapper">
+            <label>-> html 문법 변환된 텍스트가 이곳에 표시됩니다.</label>
+            <div class="textareaResult"></div>
+        </div>
+    </div>
 `;
 
-const func = () => {
+const convertToHTMLContext = () => {
 	let contents = document.getElementById('textareaId').value.split('{콘텐츠}');
 	const arr = [];
 
@@ -27,6 +37,6 @@ const func = () => {
 };
 
 document.getElementById('root').addEventListener('click', (e) => {
-	if (e.target.id !== 'tmpBtn') return;
-	document.getElementById('res').textContent = func();
+	if (e.target.id !== 'convertBtn') return;
+	document.getElementById('textareaResult').textContent = convertToHTMLContext();
 });
